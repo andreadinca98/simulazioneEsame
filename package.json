@@ -1,24 +1,26 @@
 {
-    "name": "Simulazione esame",
-    "version": "1.0.0",
-    "description": "Progetto di simulazione d'esame",
-    "main": "app.js",
-    "scripts": {
-      "start": "nodemon app.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/andreadinca98/simulazioneEsame.git"
-    },
-    "author": "Andrea D'Incà",
-    "license": "ISC",
-    "homepage": "https://github.com/andreadinca98/simulazioneEsame.git#readme",
-    "dependencies": {
-    },
-    "devDependencies": {
-      "heroku": "^7.19.3",
-      "nodemon": "^1.18.7"
-    }
-  }
-  
+  "name": "simulazioneesame",
+  "version": "1.0.0",
+  "description": "Simulazione esame ingegneria del software 2",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "node": "^11.4.0",
+    "nodemon": "^1.18.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreadinca98/simulazioneEsame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreadinca98/simulazioneEsame/issues"
+  },
+  "homepage": "https://github.com/andreadinca98/simulazioneEsame#readme"
+}

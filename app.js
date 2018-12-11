@@ -1,29 +1,19 @@
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 3000
-
-//quello che fa nella pagina localhost:3000 -> Hello World!
-
-app.get('/', (req, res) => {
-    res.send("Hello world!")
-
+ 
+var courses_offered = [{id: 21, name: 'HCI'},
+{id: 28, name:'sweng'}]
+ 
+ 
+app.get('/', (req, res) => res.send('Hello World!'))
+ 
+app.get('/string_square(:s)', (req, res) => {
+   var s = document.getElementById("s").innerHTML
+   string_square(s)
 })
-
-app.listen(PORT, () => console.log('Example app listening on port: ' + PORT))
-
-//ERRORI: se non è stato fatto nulla di quello sopra allora darà un errore
-/*app.use((req,res,next)=>{
-    const error = new Error('Page not found');
-    error.status = 404;
-    next(error);
-})
-
-app.use((error,req,res,next)=>{
-    res.status(error.status || 500);
-    res.json({
-        error: {
-            message: error.message
-        }
-    })
-})
-*/
+function string_square(s)
+{
+    console.log(s)
+}
+app.listen(PORT, () => console.log('Example app listening on port'+ PORT))
