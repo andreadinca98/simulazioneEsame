@@ -12,12 +12,12 @@ app.get('/square', (req, res) => {
     square(s)
     function square(string){
         var s = string
-        if(s>=0){
-            res.json({result:-1})
-        }
-        else{
+        if(isNaN(s)){
             var l = s.length
             res.json({result: (l*l)})
+        }
+        else{
+            res.json({result:-1})
         }
  
     }
